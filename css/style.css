@@ -1,4 +1,9 @@
-/* Mobile */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(http://example.com/fonts/ubuntu.woff) format("woff");
+}
 
 :root {
   --bgcolor: hsl(257, 40%, 49%);
@@ -10,8 +15,6 @@
   margin: 0;
   padding: 0;
 }
-
-/* Debugging purpose only */
 
 html,
 body,
@@ -30,7 +33,7 @@ body {
   background-color: var(--bgcolor);
   color: #fff;
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
   min-height: 100vh;
 }
 
@@ -66,7 +69,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* max-width: 600px; */
 }
 
 .illustration {
@@ -78,11 +80,10 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* max-width: 600px; */
 }
 
 .heading {
-  font-family: "Poppins", sans-serif;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
   font-weight: 700;
   font-size: 1.6rem;
   letter-spacing: 1.6px;
@@ -128,7 +129,6 @@ body {
 }
 
 .social-icon-box {
-  /* Remember, this is an anchor tag */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,7 +160,6 @@ body {
 
 .attribution a {
   text-decoration: none;
-  /* color: hsl(228, 45%, 44%); */
   color: hsla(360, 100%, 100%, 0.5);
   transition: 0.5s;
 }
@@ -173,7 +172,6 @@ body {
 @media screen and (max-width: 374px) {
   .header {
     padding: 10px;
-    /* justify-content: center; */
   }
   .logo-image {
     width: 100%;
@@ -189,7 +187,6 @@ body {
   }
 }
 
-/* Medium screen */
 @media screen and (min-width: 475px) {
   .heading {
     font-size: 2.5rem;
@@ -202,7 +199,6 @@ body {
   }
 }
 
-/* Large screen */
 @media (min-width: 1024px) {
   :root {
     --main-padding: 5%;
@@ -220,7 +216,6 @@ body {
     flex-direction: column;
   }
 
-  /* Header */
   .header {
     width: 100%;
     padding-top: 4%;
@@ -230,7 +225,6 @@ body {
     width: 20%;
     max-width: 440px;
   }
-  /* Main Container */
   .main {
     display: flex;
     flex-direction: row;
@@ -250,13 +244,11 @@ body {
   }
 
   .heading {
-    /* font-size: 2.5rem; */
     font-size: 3vw;
     padding: 0 0 5%;
   }
 
   .paragraph {
-    /* font-size: 1.1rem; */
     font-size: 1.5vw;
     padding: 2% 0;
   }
@@ -265,12 +257,8 @@ body {
     text-align: center;
     font-size: 1.5vw;
     margin: 2% 0;
-    /* padding: 3% 12%;  */
-    /* margin: 5% 0; */
-    /* font-size: 1.2rem; */
   }
 
-  /* Footer */
   .footer {
     width: 100%;
   }
@@ -289,13 +277,10 @@ body {
   .attribution {
     font-size: 1vw;
     text-align: center;
-    /* padding: 0.5rem; */
   }
 }
 
-/* Extra Large Screens */
 @media screen and (min-width: 1900px) {
-  /* Main Container */
   .main {
     justify-content: space-around;
     padding: 30px var(--main-padding);
