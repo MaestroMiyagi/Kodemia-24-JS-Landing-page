@@ -12,9 +12,7 @@
 }
 
 /* Debugging purpose only */
-* {
-  /* border: solid 1px hsla(360, 100%, 100%, 0.5); */
-}
+
 html,
 body,
 .page-container {
@@ -303,20 +301,4 @@ body {
     padding: 30px var(--main-padding);
   }
 
-  .image-container {
-    /* max-width: 1600px; */
-  }
-
-  .text-container {
-    /* max-width: 1200px; */
-  }
-
-  .heading {
-  }
-
-  .paragraph {
-  }
-
-  .button {
-  }
 }
